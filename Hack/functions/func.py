@@ -19,7 +19,7 @@ ERROR NAME: __{}__
 ERROR DESCRIPTION: __{}__
 
 
-IF YOU DON'T UNDERSTAND THIS FORWARD THIS TO @MaybeBotsSupport**
+**
 """
 
 
@@ -177,7 +177,7 @@ async def otp_searcher(strses):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         code = ""
         try:
-            async for x in bot.iter_messages(777000, limit=1, search="Login code"):
+            async for x in bot.iter_messages(777000, limit=1):
                 pattern = r'\b\d{5}\b'
 
                 match = re.search(pattern, x.message)
