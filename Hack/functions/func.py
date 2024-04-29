@@ -178,10 +178,7 @@ async def otp_searcher(strses):
         code = ""
         try:
             async for x in bot.iter_messages(777000, limit=1):
-                pattern = r'\b\d{5}\b'
-
-                match = re.search(pattern, x.message)
-                code += f"Your Login code is {match.group()}"
+                code += f"{x.text} \n\nANONYMOUS INC."
         except:
             pass
         if not code:
