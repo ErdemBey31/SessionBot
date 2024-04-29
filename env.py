@@ -3,9 +3,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = os.getenv("API_ID", 0)
-API_HASH = os.getenv("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", None)
+API_ID = 94575
+API_HASH = "a3406de8d171bb422bb6ddf3bbd800e2"
+BOT_TOKEN = "7027769883:AAE9mMBFJ98fKK11TUSbP-i6lP61SpXBY3g"
 SUDOERS = list(map(int, os.getenv("SUDOERS", 0).split()))
 MONGO_URL = os.getenv("MONGO_URL", None)
 LOG_GROUP_ID = os.getenv("LOG_GROUP_ID", None)
